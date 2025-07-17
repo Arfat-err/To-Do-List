@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #B6B09F;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin: auto 150px; */
+    border-radius: 3px;
+    padding: 20px;
+    
+}
+
+.input-container{
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    /* padding: 40px 0px 0px 0px; */
+}
+
+.input-head {
+    color: azure;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-block: 15px;
+    font-size: 1rem;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+}
+
+.input-container input[type="button"] {
+    background-color: green;
+    color: white;
+    padding: auto 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: rgb(43, 145, 43);
+}
+
+ul {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    max-width: 450px;
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    padding : 4px 8px;
+    border: 0.125px solid rgb(234, 224, 224);
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-block-end: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li p {
+    flex-grow: 1;
+}
+
+.edit-button {
+    margin-right: 6px;
+    padding: 0px 10px;
+    color: green;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
