@@ -8,14 +8,15 @@
 
 body {
     height: 100vh;
-    background-color: #B6B09F;
+    background-color: #ffffff;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.main-container {
+.main-container {   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +26,7 @@ body {
     /* margin: auto 150px; */
     border-radius: 3px;
     padding: 20px;
+    max-height: 300px;
     
 }
 
@@ -33,12 +35,15 @@ body {
     max-width: 450px;
     text-align: center;
     /* padding: 40px 0px 0px 0px; */
+    /* position: fixed; */
 }
 
 .input-head {
-    color: azure;
+    color: rgb(0, 0, 0);
     font-size: 25px;
     font-weight: 500;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE;
+    color: #444444;
 }
 
 .input-container input {
@@ -52,6 +57,7 @@ body {
 
 .input-container input[type="text"] {
     width: 70%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .input-container input[type="button"] {
@@ -59,11 +65,19 @@ body {
     color: white;
     padding: auto 20px;
     margin-left: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     cursor: pointer;
 }
 
 .input-container input[type="button"]:hover {
     background-color: rgb(43, 145, 43);
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 450px;
+    overflow-y: scroll;
+    padding: 0px 10px;
 }
 
 ul {
@@ -86,9 +100,11 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 ul li p {
+    overflow-x: scroll;
     flex-grow: 1;
 }
 
