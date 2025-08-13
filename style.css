@@ -25,14 +25,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* margin: auto 150px; */
     border-radius: 3px;
-    padding: 20px;
-    max-height: 300px;
-    
+    padding: 4rem;
+    max-height: 30rem;
+    width: 50%;
 }
 
 .input-container{
     width: 100%;
-    max-width: 450px;
+    max-width: 70;
     text-align: center;
     /* padding: 40px 0px 0px 0px; */
     /* position: fixed; */
@@ -40,7 +40,7 @@ body {
 
 .input-head {
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 3rem;
     font-weight: 500;
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE;
     color: #444444;
@@ -50,13 +50,14 @@ body {
     border: none;
     outline: none;
     padding: 5px;
+    padding: 0.8rem 1.5rem;
     border-radius: 3px;
-    margin-block: 15px;
-    font-size: 1rem;
+    margin-block: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .input-container input[type="text"] {
-    width: 70%;
+    width: 80%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -75,7 +76,6 @@ body {
 
 .todo-container {
     width: 100%;
-    max-width: 450px;
     overflow-y: scroll;
     padding: 0px 10px;
 }
@@ -86,17 +86,16 @@ ul {
     justify-content: center;
     align-items: center; */
     width: 100%;
-    max-width: 450px;
 }
 
 ul li {
     list-style-type: none;
     cursor: pointer;
-    padding : 4px 8px;
-    border: 0.125px solid rgb(234, 224, 224);
+    padding : 0.8rem 0.5rem;
+    border: 0.01rem solid rgb(234, 224, 224);
     border-radius: 4px;
     background-color: whitesmoke;
-    margin-block-end: 6px;
+    margin-block-end: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,12 +103,14 @@ ul li {
 }
 
 ul li p {
+    font-size: 1.1rem;
     overflow-x: scroll;
     flex-grow: 1;
 }
 
 .edit-button {
-    margin-right: 6px;
+    font-size: 1.1rem;
+    margin-right: 0.8rem;
     padding: 0px 10px;
     color: green;
     border: none;
@@ -118,6 +119,7 @@ ul li p {
 }
 
 button {
+    font-size: 1.1rem;
     color: red;
     border: none;
     outline: none;

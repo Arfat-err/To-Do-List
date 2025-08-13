@@ -6,6 +6,7 @@ let editToDo = null;
 
 const addTodo = ()=>{
     const inputText = inputBox.value.trim();
+
     if(inputText.length <= 0){
         alert("Enter a ToDo");
         return false;
@@ -17,9 +18,9 @@ const addTodo = ()=>{
         inputBox.value  = "";
     }
     else {
-    // creating a p tag
-    const li = document.createElement("li");
+    // creating a p and li tag
     const p = document.createElement("p");
+    const li = document.createElement("li");
     p.innerText = inputText;
     li.appendChild(p)
 
